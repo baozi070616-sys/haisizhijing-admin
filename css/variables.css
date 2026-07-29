@@ -1,0 +1,115 @@
+/* ==========================================================================
+   海丝智境 · 设计令牌
+   所有颜色、间距、圆角、阴影、字号、字重都从这一处声明
+   后续接 Tailwind / CSS-in-JS 改这里即可
+   ========================================================================== */
+
+:root {
+  /* --- 颜色：中性 --- */
+  --c-ink-900: #0E1530;        /* 标题/主文字 */
+  --c-ink-700: #1F2745;        /* 正文 */
+  --c-ink-500: #5A6280;        /* 次要文字 */
+  --c-ink-400: #8C93A8;        /* 弱化文字 */
+  --c-ink-300: #C0C5D5;        /* 描边/分割 */
+  --c-ink-200: #E1E5EE;        /* 输入框/弱分割 */
+  --c-ink-100: #F1F3F8;        /* 块底色 */
+  --c-ink-50:  #F7F8FC;        /* 页面最浅底 */
+  --c-bg:      #F4F6FA;        /* 主区背景 */
+  --c-card:    #FFFFFF;        /* 卡片 */
+
+  /* --- 颜色：品牌 --- */
+  --c-brand-50:  #EBF1FF;
+  --c-brand-100: #D6E3FF;
+  --c-brand-300: #6B8EFF;
+  --c-brand-500: #3B6CFF;       /* 主蓝，按钮、链接 */
+  --c-brand-600: #2D58E6;
+  --c-brand-700: #1F45C2;
+
+  /* --- 颜色：侧边栏 --- */
+  --c-side-bg:        #0F1E3D;  /* 深蓝底 */
+  --c-side-bg-deep:   #0A1632;  /* 更深 */
+  --c-side-item:      #1A2A52;  /* 菜单项 hover/active 底 */
+  --c-side-item-active: #23386A;
+  --c-side-ink:       #D7DEF0;  /* 菜单文字 */
+  --c-side-ink-dim:   #8390B0;  /* 次要 */
+  --c-side-brand:     #4A8AFF;  /* logo 高亮 */
+  --c-side-divider:   #1B2A52;
+
+  /* --- 颜色：语义 --- */
+  --c-warn-bg:    #FFF1E0;       /* 已挂载徽章底 */
+  --c-warn-ink:   #C7540A;
+  --c-warn-icon:  #FF7A00;
+  --c-info-bg:    #EAF2FF;       /* 顶部提示条 */
+  --c-info-ink:   #2D58E6;
+  --c-tag-bg:     #F0F2F7;
+  --c-tag-ink:    #5A6280;
+  --c-pdf-bg:     #F2E2D5;
+  --c-pdf-ink:    #B8492D;
+
+  /* --- 间距：4 步长 --- */
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 12px;
+  --sp-4: 16px;
+  --sp-5: 20px;
+  --sp-6: 24px;
+  --sp-7: 32px;
+  --sp-8: 40px;
+  --sp-9: 56px;
+
+  /* --- 圆角 --- */
+  --r-sm: 4px;
+  --r-md: 8px;
+  --r-lg: 12px;
+  --r-xl: 16px;
+  --r-pill: 999px;
+
+  /* --- 阴影 --- */
+  --sh-1: 0 1px 2px rgba(15, 30, 61, .04);
+  --sh-2: 0 2px 6px rgba(15, 30, 61, .06);
+  --sh-3: 0 4px 16px rgba(15, 30, 61, .08);
+  --sh-4: 0 12px 32px rgba(15, 30, 61, .12);
+  --sh-side: 1px 0 0 rgba(255, 255, 255, .04), 2px 0 12px rgba(0, 0, 0, .15);
+
+  /* --- 字号 --- */
+  --fs-xs:  11px;
+  --fs-sm:  12px;
+  --fs-md:  13px;
+  --fs-base: 14px;
+  --fs-lg:  16px;
+  --fs-xl:  18px;
+  --fs-2xl: 22px;
+  --fs-3xl: 28px;
+
+  /* --- 行高 --- */
+  --lh-tight: 1.2;
+  --lh-base:  1.5;
+
+  /* --- 字重 --- */
+  --fw-regular: 400;
+  --fw-medium:  500;
+  --fw-semibold: 600;
+  --fw-bold:    700;
+
+  /* --- 字体栈 --- */
+  --ff-sans: "PingFang SC", "Microsoft YaHei", "Hiragino Sans GB", "Source Han Sans CN",
+             "Noto Sans CJK SC", -apple-system, BlinkMacSystemFont, "Segoe UI",
+             Roboto, Helvetica, Arial, sans-serif;
+  --ff-mono: "JetBrains Mono", "Cascadia Code", "Fira Code", Consolas, monospace;
+
+  /* --- 过渡 --- */
+  --tx-fast:  .15s ease;
+  --tx-base:  .2s ease;
+  --tx-slow:  .35s cubic-bezier(.22, .61, .36, 1);
+
+  /* --- 布局 --- */
+  --layout-side-w: 240px;
+  --layout-side-w-collapsed: 64px;
+  --layout-topbar-h: 64px;
+  --layout-detail-w: 340px;
+
+  /* --- z-index --- */
+  --z-sticky: 100;
+  --z-modal: 1000;
+  --z-toast: 2000;
+}
